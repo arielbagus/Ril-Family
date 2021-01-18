@@ -19,6 +19,7 @@ public class VisualNovel {
 		window.setLayout(null);
 		window.setVisible(true);
 		con = window.getContentPane();
+		System.out.println("Test Pull");
 	}
 	
 	public static void main(String[] args) {
