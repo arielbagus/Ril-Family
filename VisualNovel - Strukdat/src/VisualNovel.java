@@ -51,10 +51,6 @@ public class VisualNovel {
 		con.add(titleNamePanel);
 		con.add(startButtonPanel);
 		
-		nextButton = new JButton("Mulai");
-		nextButton.setFont(startButtonFont);
-		nextButton.setBackground(Color.WHITE);
-		nextButton.setForeground(Color.PINK);
 	}
 	
 	public static void main(String[] args) {
