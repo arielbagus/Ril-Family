@@ -17,7 +17,7 @@ public class VisualNovel {
 	JLabel titleNameLabel;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 30);
-	JButton startButton;
+	JButton startButton, nextButton;
 	
 	public VisualNovel() {
 		
@@ -50,6 +50,11 @@ public class VisualNovel {
 		startButtonPanel.add(startButton, BorderLayout.CENTER);
 		con.add(titleNamePanel);
 		con.add(startButtonPanel);
+		
+		nextButton = new JButton("Mulai");
+		nextButton.setFont(startButtonFont);
+		nextButton.setBackground(Color.WHITE);
+		nextButton.setForeground(Color.PINK);
 	}
 	
 	public static void main(String[] args) {
