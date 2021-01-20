@@ -52,6 +52,8 @@ public class VisualNovel {
 		startButton.setContentAreaFilled(false);
 		startButton.setBorderPainted(false);
 		startButton.setForeground(Color.black);
+		startButton.setFocusPainted(false);
+
 		
 		titleNamePanel.add(titleNameLabel);
 		startButtonPanel.add(startButton);
