@@ -16,7 +16,7 @@ public class VisualNovel {
 	JPanel titleNamePanel, startButtonPanel;
 	JLabel titleNameLabel, pictureLabel;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
-	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 30);
+	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
 	JButton startButton, nextButton;
 	ImageIcon picture;
 	
