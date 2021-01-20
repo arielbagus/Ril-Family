@@ -8,16 +8,18 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 public class VisualNovel {
 
 	JFrame window;
 	Container con;
-	JPanel titleNamePanel, startButtonPanel;
+	JPanel titleNamePanel, startButtonPanel, mainTextPanel ;
 	JLabel titleNameLabel, pictureLabel;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
 	JButton startButton, nextButton;
+	JTextArea mainTextArea;
 	ImageIcon picture;
 	
 	public VisualNovel() {
@@ -61,6 +63,16 @@ public class VisualNovel {
 		con.add(titleNamePanel);
 		con.add(startButtonPanel);
 		con.add(pictureLabel);
+		
+	}  
+	
+	public void createGameScreen() {
+		
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(100, 100, 600, 250); 
+		mainTextPanel.setBackground(Color.blue);
+		con.add(mainTextPanel);
+		
 		
 	}
 	
