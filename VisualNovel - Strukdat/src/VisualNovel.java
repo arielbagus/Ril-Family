@@ -14,42 +14,51 @@ public class VisualNovel {
 	JFrame window;
 	Container con;
 	JPanel titleNamePanel, startButtonPanel;
-	JLabel titleNameLabel;
+	JLabel titleNameLabel, pictureLabel;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 30);
 	JButton startButton, nextButton;
+	ImageIcon picture;
 	
 	public VisualNovel() {
 		
-		window = new JFrame();
+		picture = new ImageIcon(this.getClass().getResource("/01.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setSize(800, 600);
+		
+		window = new JFrame("Visual Novel");
 		window.setSize(800, 600);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		window.getContentPane().setBackground(Color.BLACK);
 		window.setLayout(null);
+		window.setLocationRelativeTo(null);
 		window.setVisible(true);
 		con = window.getContentPane();
 		
 		titleNamePanel = new JPanel(new BorderLayout());
 		titleNamePanel.setBounds(100, 100, 600, 150);
-		titleNamePanel.setBackground(Color.WHITE);
+		titleNamePanel.setOpaque(false);
 		titleNameLabel = new JLabel("PERCOBAAN SATU");
-		titleNameLabel.setForeground(Color.PINK);
+		titleNameLabel.setForeground(Color.BLACK);
 		titleNameLabel.setFont(titleFont);
 		titleNameLabel.setHorizontalAlignment(JLabel.CENTER);
 		
 		startButtonPanel = new JPanel(new BorderLayout());
 		startButtonPanel.setBounds(300, 400, 200, 100);
-		startButtonPanel.setBackground(Color.WHITE);
+		startButtonPanel.setOpaque(false);
 		
 		startButton = new JButton("Mulai");
 		startButton.setFont(startButtonFont);
-		startButton.setBackground(Color.WHITE);
-		startButton.setForeground(Color.PINK);
+		startButton.setOpaque(false);
+		startButton.setContentAreaFilled(false);
+		startButton.setBorderPainted(false);
+		startButton.setForeground(Color.black);
 		
-		titleNamePanel.add(titleNameLabel, BorderLayout.CENTER);
-		startButtonPanel.add(startButton, BorderLayout.CENTER);
+		titleNamePanel.add(titleNameLabel);
+		startButtonPanel.add(startButton);
+		
 		con.add(titleNamePanel);
 		con.add(startButtonPanel);
+		con.add(pictureLabel);
 		
 	}
 	
