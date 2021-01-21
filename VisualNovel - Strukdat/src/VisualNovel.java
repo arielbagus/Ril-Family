@@ -26,9 +26,10 @@ public class VisualNovel {
 	JTextArea mainTextArea;
 	ImageIcon picture, picture2;
 	int playerHP;
-	String weapon;
+	String weapon, position;
 	
 	TitleScreenHandler tsHandler = new TitleScreenHandler();
+	ChoiceHandler choiceHandler = new ChoiceHandler();
 	
 	public VisualNovel() {
 		
@@ -111,24 +112,32 @@ public void createGameScreen() {
 		choice1.setForeground(Color.white);
 		choice1.setFont(NormalFont);
 		choice1.setBorderPainted(false);
+		choice1.addActionListener(choiceHandler);
+		choice1.setActionCommand("c1");
 		choiceButtonPanel.add(choice1);
 		choice2 = new JButton("Choice 2");
 		choice2.setBackground(Color.black);
 		choice2.setForeground(Color.white);
 		choice2.setFont(NormalFont);
 		choice2.setBorderPainted(false);
+		choice2.addActionListener(choiceHandler);
+		choice2.setActionCommand("c2");
 		choiceButtonPanel.add(choice2);
 		choice3 = new JButton("Choice 3");
 		choice3.setBackground(Color.black);
 		choice3.setForeground(Color.white);
 		choice3.setFont(NormalFont);
 		choice3.setBorderPainted(false);
+		choice3.addActionListener(choiceHandler);
+		choice3.setActionCommand("c3");
 		choiceButtonPanel.add(choice3);
 		choice4 = new JButton("Choice 4");
 		choice4.setBackground(Color.black);
 		choice4.setForeground(Color.white);
 		choice4.setFont(NormalFont);
 		choice4.setBorderPainted(false);
+		choice4.addActionListener(choiceHandler);
+		choice4.setActionCommand("c4");
 		choiceButtonPanel.add(choice4);
 		
 		playerPanel = new JPanel();
@@ -136,7 +145,7 @@ public void createGameScreen() {
 		playerPanel.setBackground(Color.black);;
 		playerPanel.setLayout(new GridLayout(1,4));
 		con.add(playerPanel);
-		hpLabel = new JLabel("HP:");
+		hpLabel = new JLabel("percobaan:");
 		hpLabel.setFont(NormalFont);
 		hpLabel.setForeground(Color.white);
 		playerPanel.add(hpLabel);
@@ -159,6 +168,28 @@ public void createGameScreen() {
 		weapon = "Knife";
 		weaponLabelName.setText(weapon);
 		hpLabelNumber.setText("" + playerHP);
+		
+		townGate();
+	}
+	
+	public void townGate(){
+		position = "townGate";
+		mainTextArea.setText("isian dalam cerita/ ceritanya");
+	
+		choice1.setText("pilih1");
+		choice2.setText("pilih2");
+		choice3.setText("pilih3");
+		choice4.setText("");
+	}
+	
+	public void talkGuard(){
+		position = "talkGuard";
+		mainTextArea.setText("isian dalam cerita/ ceritanya");
+		
+		choice1.setText(">");
+		choice2.setText("");
+		choice3.setText("");
+		choice4.setText("");
 	}
 	
 	public class TitleScreenHandler implements ActionListener{
@@ -169,6 +200,27 @@ public void createGameScreen() {
 			
 		}
 	}
+	
+	public class ChoiceHandler implements ActionListener{
+		public void actionPerformed(ActionEvent event){
+			String yourChoice = event.getActionCommand();
+			
+			switch(position){
+			case "townGate":
+				switch(yourChoice){
+				case "c1": talkGuard(); break;
+				case "c2": break;
+				case "c3": break;
+				case "c4": break;
+				}	
+				break;
+			case "talkGuard":
+				switch(yourChoice){
+				case "c1": townGate(); break;
+				}
+			}
+		}
+	}	
 	
 	public static void main(String[] args) {
 		new VisualNovel();
