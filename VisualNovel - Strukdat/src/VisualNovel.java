@@ -2,6 +2,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -16,11 +17,12 @@ public class VisualNovel {
 
 	JFrame window;
 	Container con;
-	JPanel titleNamePanel, startButtonPanel, mainTextPanel ;
+	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
 	JLabel titleNameLabel, pictureLabel, pictureLabel2;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
-	JButton startButton, nextButton;
+	Font NormalFont = new Font("Times New Roman", Font.PLAIN, 18);
+	JButton startButton, nextButton, choice1, choice2, choice3, choice4 ;
 	JTextArea mainTextArea;
 	ImageIcon picture, picture2;
 	
@@ -77,7 +79,7 @@ public class VisualNovel {
 		
 	}  
 	
-	public void createGameScreen() {
+public void createGameScreen() {
 		
 		titleNamePanel.setVisible(false);
 		startButtonPanel.setVisible(false);
@@ -85,16 +87,43 @@ public class VisualNovel {
 		
 		mainTextPanel = new JPanel();
 		mainTextPanel.setBounds(100, 100, 600, 250); 
-		mainTextPanel.setBackground(Color.blue);
+		mainTextPanel.setBackground(Color.black);
 		con.add(mainTextPanel);
 		
-		mainTextArea = new JTextArea();
+		mainTextArea = new JTextArea("This is the main text are. This game is going to be great. I'm sure of it!!!!!!!");
 		mainTextArea.setBounds(100, 100, 600, 250);
 		mainTextArea.setBackground(Color.BLACK);
 		mainTextArea.setForeground(Color.WHITE);
 		mainTextArea.setFont(startButtonFont);
 		mainTextArea.setLineWrap(true);
 		mainTextPanel.add(mainTextArea);
+		
+		choiceButtonPanel = new JPanel();
+		choiceButtonPanel.setBounds(250, 350, 300, 150);
+		choiceButtonPanel.setBackground(Color.black);
+		choiceButtonPanel.setLayout(new GridLayout(4,1));
+		con.add(choiceButtonPanel);
+		
+		choice1 = new JButton("Choice 1");
+		choice1.setBackground(Color.black);
+		choice1.setForeground(Color.white);
+		choice1.setFont(NormalFont);
+		choiceButtonPanel.add(choice1);
+		choice2 = new JButton("Choice 2");
+		choice2.setBackground(Color.black);
+		choice2.setForeground(Color.white);
+		choice2.setFont(NormalFont);
+		choiceButtonPanel.add(choice2);
+		choice3 = new JButton("Choice 3");
+		choice3.setBackground(Color.black);
+		choice3.setForeground(Color.white);
+		choice3.setFont(NormalFont);
+		choiceButtonPanel.add(choice3);
+		choice4 = new JButton("Choice 4");
+		choice4.setBackground(Color.black);
+		choice4.setForeground(Color.white);
+		choice4.setFont(NormalFont);
+		choiceButtonPanel.add(choice4);
 		
 	}
 	
