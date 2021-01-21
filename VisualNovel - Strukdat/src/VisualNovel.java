@@ -17,15 +17,18 @@ public class VisualNovel {
 
 	JFrame window;
 	Container con;
-	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel ;
+	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
 	JLabel titleNameLabel, pictureLabel, pictureLabel2;
+	JPanel titleNamePanel, startButtonPanel, mainTextPanel ;
+	JLabel titleNameLabel, pictureLabel;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font NormalFont = new Font("Times New Roman", Font.PLAIN, 28);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
 	JButton startButton, nextButton, choice1, choice2, choice3, choice4;
+	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
+	JButton startButton, nextButton;
 	JTextArea mainTextArea;
-	ImageIcon picture;
-	//ImageIcon picture2;
+	ImageIcon picture, picture2;
 	
 	TitleScreenHandler tsHandler = new TitleScreenHandler();
 	
@@ -39,8 +42,8 @@ public class VisualNovel {
 		window.setVisible(true);
 		con = window.getContentPane();
 	
-		//picture = new ImageIcon(this.getClass().getResource("/01.png"));
-		//picture2 = new ImageIcon(this.getClass().getResource("/03-1.png"));
+		picture = new ImageIcon(this.getClass().getResource("/01.png"));
+		picture2 = new ImageIcon(this.getClass().getResource("/03-1.png"));
 		pictureLabel = new JLabel(picture);
 		pictureLabel.setSize(800, 600);		
 
@@ -49,7 +52,7 @@ public class VisualNovel {
 		titleNamePanel.setOpaque(false);
 		titleNameLabel = new JLabel();
 		titleNameLabel.setText("The Legend Of Irsyad");
-		//titleNameLabel.setIcon(picture2);
+		titleNameLabel.setIcon(picture2);
 		titleNameLabel.setHorizontalTextPosition(JLabel.CENTER);
 		titleNameLabel.setVerticalTextPosition(JLabel.TOP);
 		titleNameLabel.setIconTextGap(40);
@@ -67,9 +70,8 @@ public class VisualNovel {
 		startButton.setForeground(Color.black);
 		startButton.setBackground(Color.white);
 		startButton.addActionListener(tsHandler);
-		//startButton.setOpaque(false);
-		//startButton.setContentAreaFilled(false);
-		//startButton.setBorderPainted(false);
+		startButton.setOpaque(false);
+		startButton.setContentAreaFilled(false);
 		
 		titleNamePanel.add(titleNameLabel);
 		startButtonPanel.add(startButton);
@@ -134,6 +136,13 @@ public class VisualNovel {
 			
 			createGameScreen();
 			
+		
+		
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(100, 100, 600, 250); 
+		mainTextPanel.setBackground(Color.blue);
+		con.add(mainTextPanel);
+		
 		}
 	}
 	
