@@ -22,7 +22,7 @@ public class VisualNovel {
 
 	JFrame window;
 	Container con;
-	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, mainTextPanel1, choiceButtonPanel1, mainTextPanel2, choiceButtonPanel2;
+	JPanel titleNamePanel, nextButtonPanel, startButtonPanel, mainTextPanel, choiceButtonPanel, mainTextPanel1, choiceButtonPanel1, mainTextPanel2, choiceButtonPanel2;
 	JLabel titleNameLabel, pictureLabel, pictureLabel2, pictureLabel3, pictureLabel4, pictureLabel5, pictureLabel6,
 	pictureLabel7, pictureLabel8;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
@@ -163,7 +163,7 @@ public class VisualNovel {
 		pictureLabel5.setSize(1024, 709);
 
 		picture6 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
-		pictureLabel6 = new JLabel(picture4);
+		pictureLabel6 = new JLabel(picture6);
 		pictureLabel6.setBounds(25, -40, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
@@ -254,9 +254,8 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Pada hari itu, saya ingin mengambil sepeda motor "
-				+ "yang berada di parkiran dekat masjid UMM. "
-				+ "Saya Bersama teman saya yakni Jibril kemudian teman saya datang.");
+		mainTextArea1.setText("Pada hari itu, saya ingin mengambil sepeda motor yang berada "
+				+ "di parkiran dekat masjid UMM. Saya Bersama teman saya yakni Jibril kemudian teman saya datang.");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -266,7 +265,6 @@ public class VisualNovel {
 		mainTextPanel1.add(mainTextArea1);
 
 		con.add(mainTextPanel1);
-		con.add(choiceButtonPanel);
 		con.add(pictureLabel6);
 		con.add(pictureLabel5);
 
@@ -315,7 +313,7 @@ public class VisualNovel {
 	
 	public void Option4() {
 
-		position = "Option1";
+		position = "Option4";
 
 		pictureLabel3.setVisible(false);
 		pictureLabel4.setVisible(false);
@@ -355,18 +353,22 @@ public class VisualNovel {
 
 		position = "Option1A";
 
-		pictureLabel5.setVisible(false);
-		pictureLabel6.setVisible(false);
 		mainTextPanel1.setVisible(false);
 		choiceButtonPanel.setVisible(false);
+		pictureLabel6.setVisible(false);
+		pictureLabel5.setVisible(false);
 		
-		picture5 = new ImageIcon(this.getClass().getResource("/KOS.jpg"));
+		picture4 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
-
-		picture6 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
-		pictureLabel6 = new JLabel(picture4);
-		pictureLabel6.setBounds(25, -40, 1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("Jibril(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
 		mainTextPanel1.setBounds(120, 320, 750, 170);
@@ -374,7 +376,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Bril, gimana ini jawabannya? Aku kesusahan disoal ini");
+		mainTextArea1.setText("Bril, gimana ini jawabannya? Aku kesusahan disoal ini.");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -383,8 +385,25 @@ public class VisualNovel {
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
 
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
 		con.add(mainTextPanel1);
-		con.add(pictureLabel6);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
 		con.add(pictureLabel5);
 		
 	}
