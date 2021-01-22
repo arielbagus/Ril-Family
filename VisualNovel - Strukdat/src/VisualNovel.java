@@ -41,7 +41,7 @@ public class VisualNovel {
 	public VisualNovel() {
 
 		window = new JFrame("Visual Novel");
-		window.setSize(800, 600);
+		window.setSize(1024, 709);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setLayout(null);
 		window.setLocationRelativeTo(null);
@@ -53,7 +53,7 @@ public class VisualNovel {
 		pictureLabel.setSize(1024, 709);
 
 		startButtonPanel = new JPanel(new BorderLayout());
-		startButtonPanel.setBounds(755, 250, 200, 100);
+		startButtonPanel.setBounds(457, 150, 200, 100);
 		startButtonPanel.setOpaque(false);
 
 		startButton = new JButton("Mulai");
@@ -81,14 +81,14 @@ public class VisualNovel {
 
 		picture3 = new ImageIcon(this.getClass().getResource("/GKB 1.jpg"));
 		pictureLabel3 = new JLabel(picture3);
-		pictureLabel3.setSize(1152, 798);
+		pictureLabel3.setSize(1024, 709);
 
 		picture4 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
 		pictureLabel4 = new JLabel(picture4);
-		pictureLabel4.setBounds(50, 10, 1560, 1080);
+		pictureLabel4.setBounds(25, -40, 1024, 709);
 
 		mainTextPanel = new JPanel();
-		mainTextPanel.setBounds(450, 555, 750, 125);
+		mainTextPanel.setBounds(120, 320, 750, 125);
 		mainTextPanel.setOpaque(false);
 
 		text1 = "Perkenalkan, nama saya M. Irsyad Yanuardi. "
@@ -96,7 +96,7 @@ public class VisualNovel {
 				+ "Apa yang ingin kau ketahui?";
 
 		mainTextArea = new JTextArea();
-		mainTextArea.setBounds(450, 555, 750, 125);
+		mainTextArea.setBounds(120, 320, 750, 125);
 		mainTextArea.setOpaque(false);
 		mainTextArea.setForeground(Color.white);
 		mainTextArea.setBackground(new Color (181, 175, 175));
@@ -108,7 +108,7 @@ public class VisualNovel {
 		mainTextPanel.add(mainTextArea);
 
 		choiceButtonPanel = new JPanel();
-		choiceButtonPanel.setBounds(450, 700, 750, 125);
+		choiceButtonPanel.setBounds(120, 450, 750, 125);
 		choiceButtonPanel.setOpaque(false);
 		choiceButtonPanel.setLayout(new GridLayout(4, 1));
 
@@ -260,7 +260,7 @@ public class VisualNovel {
 	}
 
 	public static void main(String[] args) {
-		System.out.print("coba");
+		System.out.print("coba lagi");
 		new VisualNovel();
 	}
 
