@@ -1,6 +1,8 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Container;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -18,13 +20,13 @@ public class VisualNovel {
 	JFrame window;
 	Container con;
 	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, playerPanel;
-	JLabel titleNameLabel, pictureLabel, pictureLabel2, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;;
+	JLabel titleNameLabel, pictureLabel, pictureLabel2, pictureLabel3, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
 	Font NormalFont = new Font("Times New Roman", Font.PLAIN, 18);
 	JButton startButton, nextButton, choice1, choice2, choice3, choice4 ;
 	JTextArea mainTextArea;
-	ImageIcon picture, picture2;
+	ImageIcon picture, picture2, picture3;
 	int playerHP;
 	String weapon, position;
 	
@@ -42,9 +44,10 @@ public class VisualNovel {
 		con = window.getContentPane();
 	
 		picture = new ImageIcon(this.getClass().getResource("/01.png"));
-		picture2 = new ImageIcon(this.getClass().getResource("/03-1.png"));
 		pictureLabel = new JLabel(picture);
 		pictureLabel.setSize(800, 600);		
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/03-1.png"));
 
 		titleNamePanel = new JPanel(new BorderLayout());
 		titleNamePanel.setBounds(100, 45, 600, 400);
@@ -82,23 +85,31 @@ public class VisualNovel {
 		
 	}  
 	
-public void createGameScreen() {
+	public void createGameScreen() {
+		
+		window.setLayout(null);
 		
 		titleNamePanel.setVisible(false);
 		startButtonPanel.setVisible(false);
 		pictureLabel.setVisible(false);
 		
 		mainTextPanel = new JPanel();
-		mainTextPanel.setBounds(100, 100, 600, 250); 
+		mainTextPanel.setBounds(0, 0, 750, 150);
 		mainTextPanel.setBackground(Color.black);
+		mainTextPanel.setAlignmentY(Component.BOTTOM_ALIGNMENT);
 		con.add(mainTextPanel);
 		
-		mainTextArea = new JTextArea("This is the main text are. This game is going to be great. I'm sure of it!!!!!!!");
-		mainTextArea.setBounds(100, 100, 600, 250);
+		mainTextArea = new JTextArea();
+		mainTextArea.setText("Perkenalkan, nama saya M. Irsyad Yanuardi. "
+				+ "Saya merupakan seorang mahasiswa di Universitas Muhammadiyah Malang jurusan Informatika. "
+				+ "Ingin tau keseruan cerita saya?");
+		mainTextArea.setBounds(0, 0, 750, 150);
 		mainTextArea.setBackground(Color.BLACK);
 		mainTextArea.setForeground(Color.WHITE);
 		mainTextArea.setFont(startButtonFont);
 		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
 		mainTextPanel.add(mainTextArea);
 		
 		choiceButtonPanel = new JPanel();
@@ -107,7 +118,7 @@ public void createGameScreen() {
 		choiceButtonPanel.setLayout(new GridLayout(4,1));
 		con.add(choiceButtonPanel);
 		
-		choice1 = new JButton("Choice 1");
+		choice1 = new JButton("Jibril");
 		choice1.setBackground(Color.black);
 		choice1.setForeground(Color.white);
 		choice1.setFont(NormalFont);
@@ -115,7 +126,7 @@ public void createGameScreen() {
 		choice1.addActionListener(choiceHandler);
 		choice1.setActionCommand("c1");
 		choiceButtonPanel.add(choice1);
-		choice2 = new JButton("Choice 2");
+		choice2 = new JButton("Adriel");
 		choice2.setBackground(Color.black);
 		choice2.setForeground(Color.white);
 		choice2.setFont(NormalFont);
@@ -123,7 +134,7 @@ public void createGameScreen() {
 		choice2.addActionListener(choiceHandler);
 		choice2.setActionCommand("c2");
 		choiceButtonPanel.add(choice2);
-		choice3 = new JButton("Choice 3");
+		choice3 = new JButton("Ariel");
 		choice3.setBackground(Color.black);
 		choice3.setForeground(Color.white);
 		choice3.setFont(NormalFont);
@@ -131,7 +142,7 @@ public void createGameScreen() {
 		choice3.addActionListener(choiceHandler);
 		choice3.setActionCommand("c3");
 		choiceButtonPanel.add(choice3);
-		choice4 = new JButton("Choice 4");
+		choice4 = new JButton("Irsyad");
 		choice4.setBackground(Color.black);
 		choice4.setForeground(Color.white);
 		choice4.setFont(NormalFont);
@@ -161,8 +172,13 @@ public void createGameScreen() {
 		weaponLabelName.setFont(NormalFont);
 		weaponLabelName.setForeground(Color.white);
 		playerPanel.add(weaponLabelName);
+	
+		picture3 = new ImageIcon(this.getClass().getResource("/04.png"));
+		pictureLabel3 = new JLabel(picture);
+		pictureLabel3.setSize(800, 600);	
+	
+		con.add(pictureLabel3);
 	}
-
 	public	void playerSetup(){
 		playerHP = 15;
 		weapon = "Knife";
@@ -215,7 +231,7 @@ public void createGameScreen() {
 				}	
 				break;
 			case "talkGuard":
-				switch(yourChoice){
+			switch(yourChoice){
 				case "c1": townGate(); break;
 				}
 			}
