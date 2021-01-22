@@ -22,26 +22,24 @@ public class VisualNovel {
 
 	JFrame window;
 	Container con;
-	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel, playerPanel;
-	JLabel titleNameLabel, pictureLabel, pictureLabel2, pictureLabel3, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;;
+	JPanel titleNamePanel, startButtonPanel, mainTextPanel, choiceButtonPanel;
+	JLabel titleNameLabel, pictureLabel, pictureLabel2, pictureLabel3, pictureLabel4;
 	Font titleFont = new Font("Times New Roman", Font.PLAIN, 60);
 	Font startButtonFont = new Font("Times New Roman", Font.PLAIN, 28);
 	Font NormalFont = new Font("Times New Roman", Font.PLAIN, 18);
-	JButton startButton, nextButton, choice1, choice2, choice3, choice4 ;
+	JButton startButton, nextButton, choice1, choice2, choice3, choice4;
 	JTextArea mainTextArea;
-	ImageIcon picture, picture2, picture3;
-	int playerHP;
-	String weapon, position, text1;
+	ImageIcon picture, picture2, picture3, picture4;
+	String position, text1;
 	int i = 0;
-	
+
 	Border orangeLine = BorderFactory.createLineBorder(Color.orange);
-	
+
 	TitleScreenHandler tsHandler = new TitleScreenHandler();
-	ChoiceFirstHandler choiceFirst = new ChoiceFirstHandler();
 	ChoiceHandler choiceHandler = new ChoiceHandler();
-	
+
 	public VisualNovel() {
-		
+
 		window = new JFrame("Visual Novel");
 		window.setSize(800, 600);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,31 +47,15 @@ public class VisualNovel {
 		window.setLocationRelativeTo(null);
 		window.setVisible(true);
 		con = window.getContentPane();
-	
-		picture = new ImageIcon(this.getClass().getResource("/01.png"));
-		pictureLabel = new JLabel(picture);
-		pictureLabel.setSize(800, 600);		
-		
-		picture2 = new ImageIcon(this.getClass().getResource("/03-1.png"));
 
-		titleNamePanel = new JPanel(new BorderLayout());
-		titleNamePanel.setBounds(100, 45, 600, 400);
-		titleNamePanel.setOpaque(false);
-		titleNameLabel = new JLabel();
-		titleNameLabel.setText("The Legend Of Irsyad");
-		titleNameLabel.setIcon(picture2);
-		titleNameLabel.setHorizontalTextPosition(JLabel.CENTER);
-		titleNameLabel.setVerticalTextPosition(JLabel.TOP);
-		titleNameLabel.setIconTextGap(40);
-		titleNameLabel.setForeground(Color.BLACK);
-		titleNameLabel.setFont(titleFont);
-		titleNameLabel.setVerticalAlignment(JLabel.CENTER);
-		titleNameLabel.setHorizontalAlignment(JLabel.CENTER);
-		
+		picture = new ImageIcon(this.getClass().getResource("/legend.jpg"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setSize(800, 600);
+
 		startButtonPanel = new JPanel(new BorderLayout());
 		startButtonPanel.setBounds(300, 400, 200, 100);
 		startButtonPanel.setOpaque(false);
-		
+
 		startButton = new JButton("Mulai");
 		startButton.setFont(startButtonFont);
 		startButton.setForeground(Color.black);
@@ -82,36 +64,39 @@ public class VisualNovel {
 		startButton.setOpaque(false);
 		startButton.setContentAreaFilled(false);
 		startButton.setBorderPainted(false);
-		
-		titleNamePanel.add(titleNameLabel);
+
 		startButtonPanel.add(startButton);
-		
-		con.add(titleNamePanel);
+
 		con.add(startButtonPanel);
 		con.add(pictureLabel);
-		
-	}  
-	
+
+	}
+
 	public void createGameScreen() {
-		
-		titleNamePanel.setVisible(false);
+
+		position = "Layar1";
+
 		startButtonPanel.setVisible(false);
 		pictureLabel.setVisible(false);
-		
-		picture3 = new ImageIcon(this.getClass().getResource("/04.jpg"));
+
+		picture3 = new ImageIcon(this.getClass().getResource("/GKB 1.jpg"));
 		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setSize(800, 600);
-		
+
+		picture4 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(315, 100, 150, 150);
+
 		mainTextPanel = new JPanel();
-		mainTextPanel.setBounds(17, 395, 750, 125);
+		mainTextPanel.setBounds(17, 265, 750, 125);
 		mainTextPanel.setOpaque(false);
-		
+
 		text1 = "Perkenalkan, nama saya M. Irsyad Yanuardi. "
 				+ "Saya merupakan seorang mahasiswa di Universitas Muhammadiyah Malang jurusan Informatika. "
 				+ "Apa yang ingin kau ketahui?";
-		
+
 		mainTextArea = new JTextArea();
-		mainTextArea.setBounds(17, 395, 750, 125);
+		mainTextArea.setBounds(17, 265, 750, 125);
 		mainTextArea.setOpaque(false);
 		mainTextArea.setForeground(Color.black);
 		mainTextArea.setBorder(orangeLine);
@@ -120,12 +105,12 @@ public class VisualNovel {
 		mainTextArea.setWrapStyleWord(true);
 		mainTextArea.setEditable(false);
 		mainTextPanel.add(mainTextArea);
-		
+
 		choiceButtonPanel = new JPanel();
-		choiceButtonPanel.setBounds(17, 150, 750, 125);
+		choiceButtonPanel.setBounds(17, 395, 750, 125);
 		choiceButtonPanel.setOpaque(false);
-		choiceButtonPanel.setLayout(new GridLayout(4,1));
-		
+		choiceButtonPanel.setLayout(new GridLayout(4, 1));
+
 		choice1 = new JButton("Apa saja");
 		choice1.setOpaque(false);
 		choice1.setForeground(Color.black);
@@ -135,7 +120,7 @@ public class VisualNovel {
 		choice1.addActionListener(choiceHandler);
 		choice1.setActionCommand("c1");
 		choiceButtonPanel.add(choice1);
-		
+
 		choice2 = new JButton("Tidak ada");
 		choice2.setForeground(Color.black);
 		choice2.setFont(NormalFont);
@@ -145,7 +130,7 @@ public class VisualNovel {
 		choice2.addActionListener(choiceHandler);
 		choice2.setActionCommand("c2");
 		choiceButtonPanel.add(choice2);
-		
+
 		choice3 = new JButton("Cerita ketika mengerjakan tugas");
 		choice3.setForeground(Color.black);
 		choice3.setFont(NormalFont);
@@ -155,7 +140,7 @@ public class VisualNovel {
 		choice3.addActionListener(choiceHandler);
 		choice3.setActionCommand("c3");
 		choiceButtonPanel.add(choice3);
-		
+
 		choice4 = new JButton("Cerita ketika kuliah");
 		choice4.setForeground(Color.black);
 		choice4.setFont(NormalFont);
@@ -165,142 +150,113 @@ public class VisualNovel {
 		choice4.addActionListener(choiceHandler);
 		choice4.setActionCommand("c4");
 		choiceButtonPanel.add(choice4);
-		
-//		playerPanel = new JPanel();
-//		playerPanel.setBounds(100, 15, 600, 50);
-//		playerPanel.setBackground(Color.black);;
-//		playerPanel.setLayout(new GridLayout(1,4));
-//		con.add(playerPanel);
-//		hpLabel = new JLabel("percobaan:");
-//		hpLabel.setFont(NormalFont);
-//		hpLabel.setForeground(Color.white);
-//		playerPanel.add(hpLabel);
-//		hpLabelNumber = new JLabel();
-//		hpLabelNumber.setFont(NormalFont);
-//		hpLabelNumber.setForeground(Color.white);
-//		playerPanel.add(hpLabelNumber);
-//		weaponLabel = new JLabel("Weapon:");
-//		weaponLabel.setFont(NormalFont);
-//		weaponLabel.setForeground(Color.white);
-//		playerPanel.add(weaponLabel);
-//		weaponLabelName = new JLabel();
-//		weaponLabelName.setFont(NormalFont);
-//		weaponLabelName.setForeground(Color.white);
-//		playerPanel.add(weaponLabelName);
-		
+
 		timer1.start();
-		
+
+		con.add(pictureLabel4);
 		con.add(mainTextPanel);
 		con.add(choiceButtonPanel);
 		con.add(pictureLabel3);
-		
+
 	}
-	
-	Timer timer1 = new Timer(100, new ActionListener(){
+
+	Timer timer1 = new Timer(100, new ActionListener() {
 
 		public void actionPerformed(ActionEvent arg0) {
-			
+
 			char character[] = text1.toCharArray();
 			int arrayNumber = character.length;
-			
+
 			String addedCharacter = "";
 			String blank = "";
-			
+
 			addedCharacter = blank + character[i];
-			
+
 			mainTextArea.append(addedCharacter);
-			
+
 			i++;
-			
-			if(i == arrayNumber) {
+
+			if (i == arrayNumber) {
 				i = 0;
 				timer1.stop();
 			}
 		}
-		
-	});
-	
-	public void choiceFirst() {
-		//Buat nampilin pilihan setelah text selesai
-	}
-	
-	public	void playerSetup(){
-		
-		playerHP = 15;
-		weapon = "Knife";
-		weaponLabelName.setText(weapon);
-		hpLabelNumber.setText("" + playerHP);
-		
-		townGate();
-		
-	}
-	
-	public void townGate(){
-		
-		position = "townGate";
-		mainTextArea.setText("isian dalam cerita/ ceritanya");
-	
-		choice1.setText("pilih1");
-		choice2.setText("pilih2");
-		choice3.setText("pilih3");
-		choice4.setText("");
-	
-	}
-	
-	public void talkGuard(){
-		
-		position = "talkGuard";
-		mainTextArea.setText("isian dalam cerita/ ceritanya");
-		
-		choice1.setText(">");
-		choice2.setText("");
-		choice3.setText("");
-		choice4.setText("");
-	
-	}
-	
-	public class TitleScreenHandler implements ActionListener{
-		
-		public void actionPerformed(ActionEvent event) {
-			
-			createGameScreen();
-			
-		}
-	}
-	
-	public class ChoiceFirstHandler implements ActionListener{
 
-		public void actionPerformed(ActionEvent arg0) {
-			
-			choiceFirst();
-			
-		}
-		
+	});
+
+	public void Layar2() {
+
+		position = "Layar2";
+		mainTextArea.setText("Ini layar 2");
+
+		choice1.setText("Jibril");
+		choice2.setText("Adriel");
+		choice3.setText("Ariel");
+		choice4.setText("Irsyad");
+
 	}
-	
-	public class ChoiceHandler implements ActionListener{
-		
-		public void actionPerformed(ActionEvent event){
-		
+
+	public void Layar3() {
+
+		position = "Layar3";
+		mainTextArea.setText("Ini layar 3");
+
+		choice1.setText("Jibril");
+		choice2.setText("Adriel");
+		choice3.setText("Ariel");
+		choice4.setText("Irsyad");
+
+	}
+
+	public class TitleScreenHandler implements ActionListener {
+
+		public void actionPerformed(ActionEvent event) {
+
+			createGameScreen();
+
+		}
+	}
+
+	public class ChoiceHandler implements ActionListener {
+
+		public void actionPerformed(ActionEvent event) {
+
 			String yourChoice = event.getActionCommand();
-			
-			switch(position){
-			case "townGate":
-				switch(yourChoice){
-				case "c1": talkGuard(); break;
-				case "c2": break;
-				case "c3": break;
-				case "c4": break;
-				}	
-				break;
-			case "talkGuard":
-			switch(yourChoice){
-				case "c1": townGate(); break;
+
+			switch (position) {
+			case "Layar1":
+				switch (yourChoice) {
+				case "c1":
+					Layar2();
+					break;
+				case "c2":
+					Layar3();
+					break;
+				case "c3":
+					break;
+				case "c4":
+					break;
 				}
+				break;
+				
+			case "Layar2":
+				switch (yourChoice) {
+				case "c1":
+					Layar3();
+					break;
+				case "c2":
+					Layar2();
+					break;
+				case "c3":
+					break;
+				case "c4":
+					break;
+				}
+				break;
 			}
 		}
-	}	
-	
+	}
+
 	public static void main(String[] args) {
 		new VisualNovel();
 	}
