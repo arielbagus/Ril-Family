@@ -48,9 +48,9 @@ public class VisualNovel {
 		window.setVisible(true);
 		con = window.getContentPane();
 
-		picture = new ImageIcon(this.getClass().getResource("/legend.jpg"));
+		picture = new ImageIcon(this.getClass().getResource("/Legend.jpg"));
 		pictureLabel = new JLabel(picture);
-		pictureLabel.setSize(800, 600);
+		pictureLabel.setSize(1560, 1080);
 
 		startButtonPanel = new JPanel(new BorderLayout());
 		startButtonPanel.setBounds(300, 400, 200, 100);
@@ -258,6 +258,7 @@ public class VisualNovel {
 	}
 
 	public static void main(String[] args) {
+		System.out.print("coba commit");
 		new VisualNovel();
 	}
 
