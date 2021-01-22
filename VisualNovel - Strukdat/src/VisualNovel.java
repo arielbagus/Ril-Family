@@ -50,7 +50,7 @@ public class VisualNovel {
 
 		picture = new ImageIcon(this.getClass().getResource("/Legend.jpg"));
 		pictureLabel = new JLabel(picture);
-		pictureLabel.setSize(1152, 798);
+		pictureLabel.setSize(1024, 709);
 
 		startButtonPanel = new JPanel(new BorderLayout());
 		startButtonPanel.setBounds(755, 250, 200, 100);
@@ -260,6 +260,7 @@ public class VisualNovel {
 	}
 
 	public static void main(String[] args) {
+		System.out.print("coba");
 		new VisualNovel();
 	}
 
