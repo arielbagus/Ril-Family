@@ -50,15 +50,15 @@ public class VisualNovel {
 
 		picture = new ImageIcon(this.getClass().getResource("/Legend.jpg"));
 		pictureLabel = new JLabel(picture);
-		pictureLabel.setSize(1560, 1080);
+		pictureLabel.setSize(1152, 798);
 
 		startButtonPanel = new JPanel(new BorderLayout());
-		startButtonPanel.setBounds(300, 400, 200, 100);
+		startButtonPanel.setBounds(755, 250, 200, 100);
 		startButtonPanel.setOpaque(false);
 
 		startButton = new JButton("Mulai");
 		startButton.setFont(startButtonFont);
-		startButton.setForeground(Color.black);
+		startButton.setForeground(Color.white);
 		startButton.setBackground(Color.white);
 		startButton.addActionListener(tsHandler);
 		startButton.setOpaque(false);
@@ -81,14 +81,14 @@ public class VisualNovel {
 
 		picture3 = new ImageIcon(this.getClass().getResource("/GKB 1.jpg"));
 		pictureLabel3 = new JLabel(picture3);
-		pictureLabel3.setSize(800, 600);
+		pictureLabel3.setSize(1152, 798);
 
 		picture4 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
 		pictureLabel4 = new JLabel(picture4);
-		pictureLabel4.setBounds(315, 100, 150, 150);
+		pictureLabel4.setBounds(50, 10, 1560, 1080);
 
 		mainTextPanel = new JPanel();
-		mainTextPanel.setBounds(17, 265, 750, 125);
+		mainTextPanel.setBounds(450, 555, 750, 125);
 		mainTextPanel.setOpaque(false);
 
 		text1 = "Perkenalkan, nama saya M. Irsyad Yanuardi. "
@@ -96,9 +96,10 @@ public class VisualNovel {
 				+ "Apa yang ingin kau ketahui?";
 
 		mainTextArea = new JTextArea();
-		mainTextArea.setBounds(17, 265, 750, 125);
+		mainTextArea.setBounds(450, 555, 750, 125);
 		mainTextArea.setOpaque(false);
-		mainTextArea.setForeground(Color.black);
+		mainTextArea.setForeground(Color.white);
+		mainTextArea.setBackground(new Color (181, 175, 175));
 		mainTextArea.setBorder(orangeLine);
 		mainTextArea.setFont(startButtonFont);
 		mainTextArea.setLineWrap(true);
@@ -107,13 +108,14 @@ public class VisualNovel {
 		mainTextPanel.add(mainTextArea);
 
 		choiceButtonPanel = new JPanel();
-		choiceButtonPanel.setBounds(17, 395, 750, 125);
+		choiceButtonPanel.setBounds(450, 700, 750, 125);
 		choiceButtonPanel.setOpaque(false);
 		choiceButtonPanel.setLayout(new GridLayout(4, 1));
 
 		choice1 = new JButton("Apa saja");
 		choice1.setOpaque(false);
-		choice1.setForeground(Color.black);
+		choice1.setForeground(Color.white);
+		choice1.setBackground(new Color (181, 175, 175));
 		choice1.setFont(NormalFont);
 		choice1.setBorder(orangeLine);
 		choice1.setContentAreaFilled(false);
@@ -122,7 +124,7 @@ public class VisualNovel {
 		choiceButtonPanel.add(choice1);
 
 		choice2 = new JButton("Tidak ada");
-		choice2.setForeground(Color.black);
+		choice2.setForeground(Color.white);
 		choice2.setFont(NormalFont);
 		choice2.setBorder(orangeLine);
 		choice2.setContentAreaFilled(false);
@@ -132,7 +134,7 @@ public class VisualNovel {
 		choiceButtonPanel.add(choice2);
 
 		choice3 = new JButton("Cerita ketika mengerjakan tugas");
-		choice3.setForeground(Color.black);
+		choice3.setForeground(Color.white);
 		choice3.setFont(NormalFont);
 		choice3.setBorder(orangeLine);
 		choice3.setContentAreaFilled(false);
@@ -142,7 +144,7 @@ public class VisualNovel {
 		choiceButtonPanel.add(choice3);
 
 		choice4 = new JButton("Cerita ketika kuliah");
-		choice4.setForeground(Color.black);
+		choice4.setForeground(Color.white);
 		choice4.setFont(NormalFont);
 		choice4.setBorder(orangeLine);
 		choice4.setContentAreaFilled(false);
@@ -258,7 +260,6 @@ public class VisualNovel {
 	}
 
 	public static void main(String[] args) {
-		System.out.print("coba commit");
 		new VisualNovel();
 	}
 
