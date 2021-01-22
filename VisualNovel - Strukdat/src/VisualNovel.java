@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import javax.swing.Timer;
 import javax.swing.border.Border;
 
 public class VisualNovel {
@@ -30,7 +31,8 @@ public class VisualNovel {
 	JTextArea mainTextArea;
 	ImageIcon picture, picture2, picture3;
 	int playerHP;
-	String weapon, position;
+	String weapon, position, text1;
+	int i = 0;
 	
 	Border orangeLine = BorderFactory.createLineBorder(Color.orange);
 	
@@ -104,10 +106,11 @@ public class VisualNovel {
 		mainTextPanel.setBounds(17, 395, 750, 125);
 		mainTextPanel.setOpaque(false);
 		
-		mainTextArea = new JTextArea();
-		mainTextArea.setText("Perkenalkan, nama saya M. Irsyad Yanuardi. "
+		text1 = "Perkenalkan, nama saya M. Irsyad Yanuardi. "
 				+ "Saya merupakan seorang mahasiswa di Universitas Muhammadiyah Malang jurusan Informatika. "
-				+ "Apa yang ingin kau ketahui?");
+				+ "Apa yang ingin kau ketahui?";
+		
+		mainTextArea = new JTextArea();
 		mainTextArea.setBounds(17, 395, 750, 125);
 		mainTextArea.setOpaque(false);
 		mainTextArea.setForeground(Color.black);
@@ -185,11 +188,37 @@ public class VisualNovel {
 //		weaponLabelName.setForeground(Color.white);
 //		playerPanel.add(weaponLabelName);
 		
+		timer1.start();
+		
 		con.add(mainTextPanel);
 		con.add(choiceButtonPanel);
 		con.add(pictureLabel3);
 		
 	}
+	
+	Timer timer1 = new Timer(100, new ActionListener(){
+
+		public void actionPerformed(ActionEvent arg0) {
+			
+			char character[] = text1.toCharArray();
+			int arrayNumber = character.length;
+			
+			String addedCharacter = "";
+			String blank = "";
+			
+			addedCharacter = blank + character[i];
+			
+			mainTextArea.append(addedCharacter);
+			
+			i++;
+			
+			if(i == arrayNumber) {
+				i = 0;
+				timer1.stop();
+			}
+		}
+		
+	});
 	
 	public void choiceFirst() {
 		//Buat nampilin pilihan setelah text selesai
