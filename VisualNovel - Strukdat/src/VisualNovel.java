@@ -296,13 +296,13 @@ public class VisualNovel {
 		
 		picture = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
 		pictureLabel = new JLabel(picture);
-		pictureLabel.setBounds(-280, -40, 1024, 709);
+		pictureLabel.setBounds(-280, -55, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel2 = new JLabel(picture2);
 		pictureLabel2.setSize(1024, 709);
 		
-		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setBounds(280, -40, 1024, 709);
 
@@ -352,9 +352,9 @@ public class VisualNovel {
 		pictureLabel2.setVisible(false);
 		pictureLabel3.setVisible(false);
 		
-		picture4 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		picture4 = new ImageIcon(this.getClass().getResource("/Adriel2.png"));
 		pictureLabel4 = new JLabel(picture4);
-		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		pictureLabel4.setBounds(-280, -55, 1024, 709);
 		
 		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel5 = new JLabel(picture5);
@@ -411,13 +411,13 @@ public class VisualNovel {
 		
 		picture = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
 		pictureLabel = new JLabel(picture);
-		pictureLabel.setBounds(-280, -40, 1024, 709);
+		pictureLabel.setBounds(-280, -55, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel2 = new JLabel(picture2);
 		pictureLabel2.setSize(1024, 709);
 		
-		picture3 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setBounds(280, -40, 1024, 709);
 
@@ -475,9 +475,9 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel2.png"));
 		pictureLabel7 = new JLabel(picture7);
-		pictureLabel7.setBounds(280, -40, 1024, 709);
+		pictureLabel7.setBounds(280, -55, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
 		mainTextPanel1.setBounds(120, 320, 750, 170);
@@ -526,13 +526,13 @@ public class VisualNovel {
 		
 		picture = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
 		pictureLabel = new JLabel(picture);
-		pictureLabel.setBounds(-280, -40, 1024, 709);
+		pictureLabel.setBounds(-280, -55, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel2 = new JLabel(picture2);
 		pictureLabel2.setSize(1024, 709);
 		
-		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setBounds(280, -40, 1024, 709);
 
@@ -540,15 +540,15 @@ public class VisualNovel {
 		mainTextPanel.setBounds(120, 320, 750, 170);
 		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
 		
-		mainTextArea = new JTextArea();
-		mainTextArea.setBounds(120, 320, 750, 250);
-		mainTextArea.setText("Oke, aku iya aja. Irsyad gimana?.");
-		mainTextArea.setForeground(Color.black);
-		mainTextArea.setOpaque(false);
-		mainTextArea.setFont(startButtonFont);
-		mainTextArea.setLineWrap(true);
-		mainTextArea.setWrapStyleWord(true);
-		mainTextArea.setEditable(false);
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Oke, aku iya aja. Irsyad gimana?");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
 		mainTextPanel.add(mainTextArea1);
 
 		nextButtonPanel = new JPanel(new BorderLayout());
@@ -581,16 +581,16 @@ public class VisualNovel {
 		pictureLabel2.setVisible(false);
 		pictureLabel3.setVisible(false);
 		
-		picture4 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
-		pictureLabel4 = new JLabel(picture);
-		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		picture4 = new ImageIcon(this.getClass().getResource("/Adriel2.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -55, 1024, 709);
 		
 		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel5 = new JLabel(picture2);
 		pictureLabel5.setSize(1024, 709);
 		
 		picture6 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
-		pictureLabel6 = new JLabel(picture3);
+		pictureLabel6 = new JLabel(picture6);
 		pictureLabel6.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
@@ -755,7 +755,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -765,7 +765,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Bril, gimana ini? Sepeda motorku masih ada di parkiran 3 sekarang sudah jam 22.00 WIB. Digembok ndak ya motorku sama bapak – bapaknya?.");
+		mainTextArea1.setText("Bril, gimana ini? Sepeda motorku masih ada di parkiran 3 sekarang sudah jam 22.00 WIB. Digembok ndak ya motorku sama Parkirnya?.");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -805,7 +805,7 @@ public class VisualNovel {
 		pictureLabel5.setVisible(false);
 		pictureLabel7.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
@@ -823,7 +823,7 @@ public class VisualNovel {
 		
 		mainTextArea = new JTextArea();
 		mainTextArea.setBounds(120, 320, 750, 250);
-		mainTextArea.setText("Wah gatau juga syad, harusnya sih udah digembok. Kan bates malemnya cuman sampai jam 21.00 WIB. Ayo coba diliat dulu diparkiran syad");
+		mainTextArea.setText("Wah gatau juga syad, harusnya sih udah digembok. Kan bates Parkir cuman sampai jam 21.00 WIB. Ayo coba diliat dulu diparkiran syad");
 		mainTextArea.setForeground(Color.black);
 		mainTextArea.setOpaque(false);
 		mainTextArea.setFont(startButtonFont);
@@ -871,7 +871,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1020,7 +1020,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1070,7 +1070,7 @@ public class VisualNovel {
 		pictureLabel5.setVisible(false);
 		pictureLabel7.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
@@ -1136,7 +1136,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1185,8 +1185,8 @@ public class VisualNovel {
 		pictureLabel4.setVisible(false);
 		pictureLabel5.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
-		pictureLabel = new JLabel(picture4);
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
+		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
@@ -1194,7 +1194,7 @@ public class VisualNovel {
 		pictureLabel2.setSize(1024, 709);
 		
 		picture3 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
-		pictureLabel3 = new JLabel(picture7);
+		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel = new JPanel();
@@ -1251,7 +1251,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1362,7 +1362,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Ariel2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1412,7 +1412,7 @@ public class VisualNovel {
 		pictureLabel5.setVisible(false);
 		pictureLabel7.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
@@ -1478,7 +1478,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Ariel2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1488,7 +1488,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Loh, beneran tah ril sekarang? Nanggung ini kurang sedikit lagi");
+		mainTextArea1.setText("Loh, Nanggung ini kurang sedikit lagi");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -1527,8 +1527,8 @@ public class VisualNovel {
 		pictureLabel4.setVisible(false);
 		pictureLabel5.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
-		pictureLabel = new JLabel(picture4);
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
+		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
@@ -1536,7 +1536,7 @@ public class VisualNovel {
 		pictureLabel2.setSize(1024, 709);
 		
 		picture3 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
-		pictureLabel3 = new JLabel(picture7);
+		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel = new JPanel();
@@ -1545,7 +1545,7 @@ public class VisualNovel {
 		
 		mainTextArea = new JTextArea();
 		mainTextArea.setBounds(120, 320, 750, 250);
-		mainTextArea.setText("Beneran dong, diajak aja itu anak – anak semua");
+		mainTextArea.setText("Ajak aja itu anak – anak semua");
 		mainTextArea.setForeground(Color.black);
 		mainTextArea.setOpaque(false);
 		mainTextArea.setFont(startButtonFont);
@@ -1593,7 +1593,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Ariel2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1704,7 +1704,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1754,7 +1754,7 @@ public class VisualNovel {
 		pictureLabel5.setVisible(false);
 		pictureLabel7.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
 		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
@@ -1820,7 +1820,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -1869,16 +1869,16 @@ public class VisualNovel {
 		pictureLabel4.setVisible(false);
 		pictureLabel5.setVisible(false);
 		
-		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
-		pictureLabel = new JLabel(picture4);
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad2.png"));
+		pictureLabel = new JLabel(picture);
 		pictureLabel.setBounds(-280, -40, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
 		pictureLabel2 = new JLabel(picture5);
 		pictureLabel2.setSize(1024, 709);
 		
-		picture3 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
-		pictureLabel3 = new JLabel(picture7);
+		picture3 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel3 = new JLabel(picture3);
 		pictureLabel3.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel = new JPanel();
@@ -1935,7 +1935,7 @@ public class VisualNovel {
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel2.png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -2097,20 +2097,20 @@ public class VisualNovel {
 		pictureLabel5.setSize(1024, 709);
 
 		picture6 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
-		pictureLabel6 = new JLabel(picture4);
-		pictureLabel6.setBounds(25, -40, 1024, 709);
+		pictureLabel6 = new JLabel(picture6);
+		pictureLabel6.setBounds(110, -45, 1024, 709);
 		
 		picture = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
-		pictureLabel = new JLabel(picture4);
-		pictureLabel.setBounds(-280, -40, 1024, 709);
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-380, -45, 1024, 709);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
-		pictureLabel2 = new JLabel(picture4);
-		pictureLabel2.setBounds(280, -40, 1024, 709);
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setBounds(350, -55, 1024, 709);
 		
 		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
-		pictureLabel7 = new JLabel(picture4);
-		pictureLabel7.setBounds(50, -40, 1024, 709);
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(-140, -53, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
 		mainTextPanel1.setBounds(120, 320, 750, 170);
@@ -2118,7 +2118,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Terima kasih telah mengikuti kisah saya. Selamat anda menemukan satu ending, jangan lupa cari ending lainnya ya.");
+		mainTextArea1.setText("Terima kasih telah mengikuti kisah saya. ");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
