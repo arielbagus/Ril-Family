@@ -637,6 +637,7 @@ public class VisualNovel {
 		pictureLabel4.setVisible(false);
 		pictureLabel6.setVisible(false);
 		pictureLabel5.setVisible(false);
+		nextButtonPanel.setVisible(false);
 		
 		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
 		pictureLabel2 = new JLabel(picture2);
@@ -660,24 +661,8 @@ public class VisualNovel {
 		mainTextArea1.setWrapStyleWord(true);
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
-
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
 		
 		con.add(mainTextPanel1);
-		con.add(nextButtonPanel);
 		con.add(pictureLabel3);
 		con.add(pictureLabel2);
 	}
@@ -919,6 +904,7 @@ public class VisualNovel {
 		pictureLabel7.setVisible(false);
 		pictureLabel4.setVisible(false);
 		pictureLabel5.setVisible(false);
+		nextButtonPanel.setVisible(false);
 		
 		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
 		pictureLabel = new JLabel(picture);
@@ -942,24 +928,8 @@ public class VisualNovel {
 		mainTextArea.setWrapStyleWord(true);
 		mainTextArea.setEditable(false);
 		mainTextPanel.add(mainTextArea);
-
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
 		
 		con.add(mainTextPanel);
-		con.add(nextButtonPanel);
 		con.add(pictureLabel);
 		con.add(pictureLabel2);
 		
@@ -1297,6 +1267,7 @@ public class VisualNovel {
 		position = "Option1A_Lanjut4";
 
 		mainTextPanel1.setVisible(false);
+		nextButtonPanel.setVisible(false);
 		pictureLabel4.setVisible(false);
 		pictureLabel7.setVisible(false);
 		pictureLabel5.setVisible(false);
@@ -1324,23 +1295,7 @@ public class VisualNovel {
 		mainTextArea.setEditable(false);
 		mainTextPanel.add(mainTextArea);
 
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
-		
 		con.add(mainTextPanel);
-		con.add(nextButtonPanel);
 		con.add(pictureLabel);
 		con.add(pictureLabel2);
 		
@@ -1639,6 +1594,7 @@ public class VisualNovel {
 		position = "Option1B_Lanjut4";
 
 		mainTextPanel1.setVisible(false);
+		nextButtonPanel.setVisible(false);
 		pictureLabel4.setVisible(false);
 		pictureLabel7.setVisible(false);
 		pictureLabel5.setVisible(false);
@@ -1666,23 +1622,7 @@ public class VisualNovel {
 		mainTextArea.setEditable(false);
 		mainTextPanel.add(mainTextArea);
 
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
-		
 		con.add(mainTextPanel);
-		con.add(nextButtonPanel);
 		con.add(pictureLabel);
 		con.add(pictureLabel2);
 		
@@ -1984,6 +1924,7 @@ public class VisualNovel {
 		pictureLabel4.setVisible(false);
 		pictureLabel7.setVisible(false);
 		pictureLabel5.setVisible(false);
+		nextButtonPanel.setVisible(false);
 		
 		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
 		pictureLabel = new JLabel(picture);
@@ -2007,24 +1948,8 @@ public class VisualNovel {
 		mainTextArea.setWrapStyleWord(true);
 		mainTextArea.setEditable(false);
 		mainTextPanel.add(mainTextArea);
-
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
 		
 		con.add(mainTextPanel);
-		con.add(nextButtonPanel);
 		con.add(pictureLabel);
 		con.add(pictureLabel2);
 		
@@ -2061,96 +1986,65 @@ public class VisualNovel {
 		mainTextArea1.setWrapStyleWord(true);
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
-
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
 		
 		con.add(mainTextPanel1);
-		con.add(nextButtonPanel);
 		con.add(pictureLabel6);
 		con.add(pictureLabel5);
 
 	}
 
-	public void End1() {
-
-		position = "End1";
-
-		pictureLabel5.setVisible(false);
-		pictureLabel6.setVisible(false);
-		mainTextPanel1.setVisible(false);
-		
-		picture5 = new ImageIcon(this.getClass().getResource("/GKB 1.jpg"));
-		pictureLabel5 = new JLabel(picture5);
-		pictureLabel5.setSize(1024, 709);
-
-		picture6 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
-		pictureLabel6 = new JLabel(picture6);
-		pictureLabel6.setBounds(110, -45, 1024, 709);
-		
-		picture = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
-		pictureLabel = new JLabel(picture);
-		pictureLabel.setBounds(-380, -45, 1024, 709);
-		
-		picture2 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
-		pictureLabel2 = new JLabel(picture2);
-		pictureLabel2.setBounds(350, -55, 1024, 709);
-		
-		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
-		pictureLabel7 = new JLabel(picture7);
-		pictureLabel7.setBounds(-140, -53, 1024, 709);
-
-		mainTextPanel1 = new JPanel();
-		mainTextPanel1.setBounds(120, 320, 750, 170);
-		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
-		
-		mainTextArea1 = new JTextArea();
-		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Terima kasih telah mengikuti kisah saya. ");
-		mainTextArea1.setForeground(Color.black);
-		mainTextArea1.setOpaque(false);
-		mainTextArea1.setFont(startButtonFont);
-		mainTextArea1.setLineWrap(true);
-		mainTextArea1.setWrapStyleWord(true);
-		mainTextArea1.setEditable(false);
-		mainTextPanel1.add(mainTextArea1);
-
-		nextButtonPanel = new JPanel(new BorderLayout());
-		nextButtonPanel.setBounds(710, 460, 200, 100);
-		nextButtonPanel.setOpaque(false);
-
-		nextButton = new JButton("Selanjutnya");
-		nextButton.setFont(startButtonFont);
-		nextButton.setForeground(Color.white);
-		nextButton.setOpaque(false);
-		nextButton.setContentAreaFilled(false);
-		nextButton.setBorderPainted(false);
-		nextButton.addActionListener(choiceHandler);
-		nextButton.setActionCommand("c1");
-		
-		nextButtonPanel.add(nextButton);
-		
-		con.add(mainTextPanel1);
-		con.add(nextButtonPanel);
-		con.add(pictureLabel);
-		con.add(pictureLabel2);
-		con.add(pictureLabel6);
-		con.add(pictureLabel7);
-		con.add(pictureLabel5);
-	
-	}
+//	public void End1() {
+//
+//		position = "End1";
+//
+//		pictureLabel5.setVisible(false);
+//		pictureLabel6.setVisible(false);
+//		mainTextPanel1.setVisible(false);
+//		nextButtonPanel.setVisible(false);
+//		
+//		picture5 = new ImageIcon(this.getClass().getResource("/GKB 1.jpg"));
+//		pictureLabel5 = new JLabel(picture5);
+//		pictureLabel5.setSize(1024, 709);
+//
+//		picture6 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+//		pictureLabel6 = new JLabel(picture6);
+//		pictureLabel6.setBounds(110, -45, 1024, 709);
+//		
+//		picture = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+//		pictureLabel = new JLabel(picture);
+//		pictureLabel.setBounds(-380, -45, 1024, 709);
+//		
+//		picture2 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+//		pictureLabel2 = new JLabel(picture2);
+//		pictureLabel2.setBounds(350, -55, 1024, 709);
+//		
+//		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+//		pictureLabel7 = new JLabel(picture7);
+//		pictureLabel7.setBounds(-140, -53, 1024, 709);
+//
+//		mainTextPanel1 = new JPanel();
+//		mainTextPanel1.setBounds(120, 320, 750, 170);
+//		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+//		
+//		mainTextArea1 = new JTextArea();
+//		mainTextArea1.setBounds(120, 320, 750, 250);
+//		mainTextArea1.setText("Terima kasih telah mengikuti kisah saya. ");
+//		mainTextArea1.setForeground(Color.black);
+//		mainTextArea1.setOpaque(false);
+//		mainTextArea1.setFont(startButtonFont);
+//		mainTextArea1.setLineWrap(true);
+//		mainTextArea1.setWrapStyleWord(true);
+//		mainTextArea1.setEditable(false);
+//		mainTextPanel1.add(mainTextArea1);
+//		
+//		con.add(mainTextPanel1);
+//		con.add(pictureLabel);
+//		con.add(pictureLabel2);
+//		con.add(pictureLabel6);
+//		con.add(pictureLabel7);
+//		con.add(pictureLabel5);
+//	
+//	}
 	
 	public class TitleScreenHandler implements ActionListener {
 
@@ -2321,21 +2215,6 @@ public class VisualNovel {
 					break;
 				}
 				break;
-				
-			case "Option1D":
-				switch (yourChoice) {
-				case "c1":
-					End1();
-					break;
-				}
-				break;
-			
-			case "End1":
-				switch (yourChoice) {
-				case "c1":
-					break;
-				}
-				break;	
 				
 			case "Option2":
 				switch (yourChoice) {
