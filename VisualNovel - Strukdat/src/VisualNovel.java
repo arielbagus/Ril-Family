@@ -245,7 +245,7 @@ public class VisualNovel {
 		pictureLabel5.setSize(1024, 709);
 
 		picture6 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
-		pictureLabel6 = new JLabel(picture4);
+		pictureLabel6 = new JLabel(picture6);
 		pictureLabel6.setBounds(25, -40, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
@@ -254,8 +254,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Pada hari itu, saya ingin mengambil sepeda motor yang berada "
-				+ "di parkiran dekat masjid UMM. Saya Bersama teman saya yakni Jibril kemudian teman saya datang.");
+		mainTextArea1.setText("Pada hari itu, saya ingin mengambil sepeda motor yang berada di parkiran dekat masjid UMM. Saya Bersama teman saya yakni Jibril kemudian teman saya datang.");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -264,10 +263,421 @@ public class VisualNovel {
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
 
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+
 		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
 		con.add(pictureLabel6);
 		con.add(pictureLabel5);
+		
+	}
+	
+	public void Option2_Lanjut(){
+		position = "Option2_Lanjut";
 
+		mainTextPanel1.setVisible(false);
+		pictureLabel6.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Syad, aku gonceng yo ikut ke kosmu");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option2_Lanjut1(){
+		position = "Option2_Lanjut1";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Loh, aku sudah bareng Jibril dril. Coba kamu tanya ke Ariel biasanya kan bawa sepeda motor");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option2_Lanjut2(){
+		position = "Option2_Lanjut2";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Udah coba kuchat tadi masih belum dibales, gimana ini yo?");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option2_Lanjut3(){
+		position = "Option2_Lanjut3";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Udah gampang, gonceng tiga aja ayo.");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option2_Lanjut4(){
+		position = "Option2_Lanjut4";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Oke, aku iya aja. Irsyad gimana?.");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+	}
+	
+	public void Option2_Lanjut5(){
+		position = "Option2_Lanjut5";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel4 = new JLabel(picture);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel5 = new JLabel(picture2);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture6 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel6 = new JLabel(picture3);
+		pictureLabel6.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Yaudah ayo gas.");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel6);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option2_Lanjut6(){
+		position = "Option2_Lanjut6";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel6.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(25, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Akhirnya Irsyad berserta kedua temannya pulang dengan berbonceng tiga. Mereka akan menuju kos Irsyad yang terletak dibelakang kampus, mereka ingin melewati daerah dome. Akan tetapi, ditegur oleh pak satpam yang berada disana. Dan akhirnya mereka pun balik melewati sengkaling.");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
 	}
 	
 	public void Option3() {
@@ -304,11 +714,253 @@ public class VisualNovel {
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
 
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
 		con.add(mainTextPanel1);
-		con.add(choiceButtonPanel);
+		con.add(nextButtonPanel);
 		con.add(pictureLabel6);
 		con.add(pictureLabel5);
 
+	}
+	
+	public void Option3_Lanjut() {
+
+		position = "Option3_Lanjut";
+
+		mainTextPanel1.setVisible(false);
+		choiceButtonPanel.setVisible(false);
+		pictureLabel6.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/ICT.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Bril, gimana ini? Sepeda motorku masih ada di parkiran 3 sekarang sudah jam 22.00 WIB. Digembok ndak ya motorku sama bapak – bapaknya?.");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+		
+	}
+	
+	public void Option3_Lanjut1(){
+		position = "Option3_Lanjut1";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		pictureLabel7.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/ICT.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Wah gatau juga syad, harusnya sih udah digembok. Kan bates malemnya cuman sampai jam 21.00 WIB. Ayo coba diliat dulu diparkiran syad");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option3_Lanjut2(){
+		position = "Option3_Lanjut2";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/ICT.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Yaudah ayo temenin");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option3_Lanjut3(){
+		position = "Option3_Lanjut3";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(25, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Akhirnya Jibril menemani Irsyad untuk melihat keadaan motornya. Namun, motor tersebut telah digembok pada saat mereka melihatnya. Irsyad pun pulang ke kosnya dengan diantar oleh Jibril");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel2);
+		
 	}
 	
 	public void Option4() {
@@ -358,15 +1010,15 @@ public class VisualNovel {
 		pictureLabel6.setVisible(false);
 		pictureLabel5.setVisible(false);
 		
-		picture4 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
 		pictureLabel4 = new JLabel(picture4);
 		pictureLabel4.setBounds(-280, -40, 1024, 709);
 		
-		picture5 = new ImageIcon(this.getClass().getResource("/Dome.jpg"));
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
 		
-		picture7 = new ImageIcon(this.getClass().getResource("Jibril(1).png"));
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
 		pictureLabel7 = new JLabel(picture7);
 		pictureLabel7.setBounds(280, -40, 1024, 709);
 
@@ -408,22 +1060,83 @@ public class VisualNovel {
 		
 	}
 	
-	public void Option1B() {
+	public void Option1A_Lanjut(){
+		position = "Option1A_Lanjut";
 
-		position = "Option1B";
-
-		pictureLabel5.setVisible(false);
-		pictureLabel6.setVisible(false);
 		mainTextPanel1.setVisible(false);
-		choiceButtonPanel.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		pictureLabel7.setVisible(false);
 		
-		picture5 = new ImageIcon(this.getClass().getResource("/KOS.jpg"));
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Aku juga gatau syad, gimana kalo gini aja. Tugasnya ditaruh dulu, sekarang kita berangkat ke paralayang?");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1A_Lanjut1(){
+		position = "Option1A_Lanjut1";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
-
-		picture6 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
-		pictureLabel6 = new JLabel(picture4);
-		pictureLabel6.setBounds(25, -40, 1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
 		mainTextPanel1.setBounds(120, 320, 750, 170);
@@ -431,7 +1144,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Ril, gimana ini jawabannya? Aku kesusahan disoal ini");
+		mainTextArea1.setText("Loh, beneran tah bril sekarang? Sudah malem ini");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -440,28 +1153,558 @@ public class VisualNovel {
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
 
-		con.add(mainTextPanel1);
-		con.add(pictureLabel6);
-		con.add(pictureLabel5);
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
 
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option1A_Lanjut2(){
+		position = "Option1A_Lanjut2";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture4);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture5);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel3 = new JLabel(picture7);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Ya jelas sekarang dong, diajak aja itu anak – anak semua");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1A_Lanjut3(){
+		position = "Option1A_Lanjut3";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Jibril(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Oke, kuajak dulu anak - anak");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option1A_Lanjut4(){
+		
+		position = "Option1A_Lanjut4";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(25, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Setelah Irsyad bertanya kepada teman – temannya semua menyetujui hal tersebut dan kemudian mereka semua berangkat ke paralayang dengan meninggalkan tugas yang belum selesai tersebut");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1B() {
+		position = "Option1B";
+
+		mainTextPanel1.setVisible(false);
+		choiceButtonPanel.setVisible(false);
+		pictureLabel6.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Ril, gimana ini jawabannya? Aku kesusahan disoal ini.");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+		
+	}
+	
+	public void Option1B_Lanjut(){
+		position = "Option1B_Lanjut";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		pictureLabel7.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Aku juga gatau syad, gimana kalo gini aja. Tugasnya ditaruh dulu, sekarang kita main PES dulu bareng anak - anak?");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1B_Lanjut1(){
+		position = "Option1B_Lanjut1";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Loh, beneran tah ril sekarang? Nanggung ini kurang sedikit lagi");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option1B_Lanjut2(){
+		position = "Option1B_Lanjut2";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture4);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture5);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		pictureLabel3 = new JLabel(picture7);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Beneran dong, diajak aja itu anak – anak semua");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1B_Lanjut3(){
+		position = "Option1B_Lanjut3";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Oke, kuajak dulu anak - anak");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option1B_Lanjut4(){
+		
+		position = "Option1B_Lanjut4";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(25, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Setelah Irsyad bertanya kepada teman – temannya semua menyetujui hal tersebut dan kemudian mereka semua bermain PES hingga larut malam tanpa menyelesaikan tugas tersebut");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel2);
+		
 	}
 	
 	public void Option1C() {
-
 		position = "Option1C";
 
-		pictureLabel5.setVisible(false);
-		pictureLabel6.setVisible(false);
 		mainTextPanel1.setVisible(false);
 		choiceButtonPanel.setVisible(false);
+		pictureLabel6.setVisible(false);
+		pictureLabel5.setVisible(false);
 		
-		picture5 = new ImageIcon(this.getClass().getResource("/KOS.jpg"));
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
 		pictureLabel5 = new JLabel(picture5);
 		pictureLabel5.setSize(1024, 709);
-
-		picture6 = new ImageIcon(this.getClass().getResource("Irsyad.png"));
-		pictureLabel6 = new JLabel(picture4);
-		pictureLabel6.setBounds(25, -40, 1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
 
 		mainTextPanel1 = new JPanel();
 		mainTextPanel1.setBounds(120, 320, 750, 170);
@@ -469,7 +1712,7 @@ public class VisualNovel {
 		
 		mainTextArea1 = new JTextArea();
 		mainTextArea1.setBounds(120, 320, 750, 250);
-		mainTextArea1.setText("Dril, gimana ini jawabannya? Aku kesusahan disoal ini");
+		mainTextArea1.setText("Dril, gimana ini jawabannya? Aku kesusahan disoal ini.");
 		mainTextArea1.setForeground(Color.black);
 		mainTextArea1.setOpaque(false);
 		mainTextArea1.setFont(startButtonFont);
@@ -478,10 +1721,311 @@ public class VisualNovel {
 		mainTextArea1.setEditable(false);
 		mainTextPanel1.add(mainTextArea1);
 
-		con.add(mainTextPanel1);
-		con.add(pictureLabel6);
-		con.add(pictureLabel5);
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
 
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+		
+	}
+	
+	public void Option1C_Lanjut(){
+		position = "Option1C_Lanjut";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		pictureLabel7.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel3 = new JLabel(picture3);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Sek sek  syad, live ig dulu");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1C_Lanjut1(){
+		position = "Option1C_Lanjut1";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Loh heh, nanggung ini kurang sedikit lagi");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option1C_Lanjut2(){
+		position = "Option1C_Lanjut2";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture4);
+		pictureLabel.setBounds(-280, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture5);
+		pictureLabel2.setSize(1024, 709);
+		
+		picture3 = new ImageIcon(this.getClass().getResource("/Ariel(1).png"));
+		pictureLabel3 = new JLabel(picture7);
+		pictureLabel3.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Ditinggal aja dulu syad, istirahat aja dulu");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel3);
+		con.add(pictureLabel2);
+		
+	}
+	
+	public void Option1C_Lanjut3(){
+		position = "Option1C_Lanjut3";
+
+		mainTextPanel.setVisible(false);
+		pictureLabel.setVisible(false);
+		pictureLabel2.setVisible(false);
+		pictureLabel3.setVisible(false);
+		
+		picture4 = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel4 = new JLabel(picture4);
+		pictureLabel4.setBounds(-280, -40, 1024, 709);
+		
+		picture5 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel5 = new JLabel(picture5);
+		pictureLabel5.setSize(1024, 709);
+		
+		picture7 = new ImageIcon(this.getClass().getResource("/Adriel(1).png"));
+		pictureLabel7 = new JLabel(picture7);
+		pictureLabel7.setBounds(280, -40, 1024, 709);
+
+		mainTextPanel1 = new JPanel();
+		mainTextPanel1.setBounds(120, 320, 750, 170);
+		mainTextPanel1.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea1 = new JTextArea();
+		mainTextArea1.setBounds(120, 320, 750, 250);
+		mainTextArea1.setText("Okedeh, tak istirahat dulu");
+		mainTextArea1.setForeground(Color.black);
+		mainTextArea1.setOpaque(false);
+		mainTextArea1.setFont(startButtonFont);
+		mainTextArea1.setLineWrap(true);
+		mainTextArea1.setWrapStyleWord(true);
+		mainTextArea1.setEditable(false);
+		mainTextPanel1.add(mainTextArea1);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel1);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel4);
+		con.add(pictureLabel7);
+		con.add(pictureLabel5);
+	}
+	
+	public void Option1C_Lanjut4(){
+		
+		position = "Option1C_Lanjut4";
+
+		mainTextPanel1.setVisible(false);
+		pictureLabel4.setVisible(false);
+		pictureLabel7.setVisible(false);
+		pictureLabel5.setVisible(false);
+		
+		picture = new ImageIcon(this.getClass().getResource("/Irsyad.png"));
+		pictureLabel = new JLabel(picture);
+		pictureLabel.setBounds(25, -40, 1024, 709);
+		
+		picture2 = new ImageIcon(this.getClass().getResource("/Kos.jpg"));
+		pictureLabel2 = new JLabel(picture2);
+		pictureLabel2.setSize(1024, 709);
+
+		mainTextPanel = new JPanel();
+		mainTextPanel.setBounds(120, 320, 750, 170);
+		mainTextPanel.setBackground(new Color(201, 194, 194, 80));
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(120, 320, 750, 250);
+		mainTextArea.setText("Karena irsyad tidak dapat menemukan jawaban tersebut akhirnya irsyad pun beristirahat sejenak, dan akhirnya ketiduran pada saat itu");
+		mainTextArea.setForeground(Color.black);
+		mainTextArea.setOpaque(false);
+		mainTextArea.setFont(startButtonFont);
+		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
+		mainTextArea.setEditable(false);
+		mainTextPanel.add(mainTextArea);
+
+		nextButtonPanel = new JPanel(new BorderLayout());
+		nextButtonPanel.setBounds(710, 460, 200, 100);
+		nextButtonPanel.setOpaque(false);
+
+		nextButton = new JButton("Selanjutnya");
+		nextButton.setFont(startButtonFont);
+		nextButton.setForeground(Color.white);
+		nextButton.setOpaque(false);
+		nextButton.setContentAreaFilled(false);
+		nextButton.setBorderPainted(false);
+		nextButton.addActionListener(choiceHandler);
+		nextButton.setActionCommand("c1");
+		
+		nextButtonPanel.add(nextButton);
+		
+		con.add(mainTextPanel);
+		con.add(nextButtonPanel);
+		con.add(pictureLabel);
+		con.add(pictureLabel2);
+		
 	}
 	
 	public void Option1D() {
@@ -571,6 +2115,228 @@ public class VisualNovel {
 					break;
 				}
 				break;
+			
+			case "Option1A":
+				switch (yourChoice) {
+				case "c1":
+					Option1A_Lanjut();
+					break;
+				}
+				break;	
+				
+			case "Option1A_Lanjut":
+				switch (yourChoice) {
+				case "c1":
+					Option1A_Lanjut1();
+					break;
+				}
+				break;	
+				
+			case "Option1A_Lanjut1":
+				switch (yourChoice) {
+				case "c1":
+					Option1A_Lanjut2();
+					break;
+				}
+				break;	
+				
+			case "Option1A_Lanjut2":
+				switch (yourChoice) {
+				case "c1":
+					Option1A_Lanjut3();
+					break;
+				}
+				break;	
+			
+			case "Option1A_Lanjut3":
+				switch (yourChoice) {
+				case "c1":
+					Option1A_Lanjut4();
+					break;
+				}
+				break;	
+				
+			case "Option1B":
+				switch (yourChoice) {
+				case "c1":
+					Option1B_Lanjut();
+					break;
+				}
+				break;	
+				
+			case "Option1B_Lanjut":
+				switch (yourChoice) {
+				case "c1":
+					Option1B_Lanjut1();
+					break;
+				}
+				break;	
+				
+			case "Option1B_Lanjut1":
+				switch (yourChoice) {
+				case "c1":
+					Option1B_Lanjut2();
+					break;
+				}
+				break;	
+				
+			case "Option1B_Lanjut2":
+				switch (yourChoice) {
+				case "c1":
+					Option1B_Lanjut3();
+					break;
+				}
+				break;	
+			
+			case "Option1B_Lanjut3":
+				switch (yourChoice) {
+				case "c1":
+					Option1B_Lanjut4();
+					break;
+				}
+				break;	
+			
+			case "Option1C":
+				switch (yourChoice) {
+				case "c1":
+					Option1C_Lanjut();
+					break;
+				}
+				break;	
+				
+			case "Option1C_Lanjut":
+				switch (yourChoice) {
+				case "c1":
+					Option1C_Lanjut1();
+					break;
+				}
+				break;	
+				
+			case "Option1C_Lanjut1":
+				switch (yourChoice) {
+				case "c1":
+					Option1C_Lanjut2();
+					break;
+				}
+				break;	
+				
+			case "Option1C_Lanjut2":
+				switch (yourChoice) {
+				case "c1":
+					Option1C_Lanjut3();
+					break;
+				}
+				break;	
+			
+			case "Option1C_Lanjut3":
+				switch (yourChoice) {
+				case "c1":
+					Option1C_Lanjut4();
+					break;
+				}
+				break;
+				
+			case "Option2":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut();
+					break;
+				}
+				break;
+			
+			case "Option2_Lanjut":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut1();
+					break;
+				}
+				break;	
+				
+			case "Option2_Lanjut1":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut2();
+					break;
+				}
+				break;	
+				
+			case "Option2_Lanjut2":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut3();
+					break;
+				}
+				break;	
+				
+			case "Option2_Lanjut3":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut4();
+					break;
+				}
+				break;	
+			
+			case "Option2_Lanjut4":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut5();
+					break;
+				}
+				break;	
+				
+			case "Option2_Lanjut5":
+				switch (yourChoice) {
+				case "c1":
+					Option2_Lanjut6();
+					break;
+				}
+				break;	
+				
+			case "Option2_Lanjut6":
+				switch (yourChoice) {
+				case "c1":
+					break;
+				}
+				break;	
+			
+			case "Option3":
+				switch (yourChoice) {
+				case "c1":
+					Option3_Lanjut();
+					break;
+				}
+				break;
+			
+			case "Option3_Lanjut":
+				switch (yourChoice) {
+				case "c1":
+					Option3_Lanjut1();
+					break;
+				}
+				break;	
+				
+			case "Option3_Lanjut1":
+				switch (yourChoice) {
+				case "c1":
+					Option3_Lanjut2();
+					break;
+				}
+				break;	
+				
+			case "Option3_Lanjut2":
+				switch (yourChoice) {
+				case "c1":
+					Option3_Lanjut3();
+					break;
+				}
+				break;	
+				
+			case "Option3_Lanjut3":
+				switch (yourChoice) {
+				case "c1":
+					break;
+				}
+				break;	
 			}
 		}
 	}
